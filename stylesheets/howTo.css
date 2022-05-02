@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: white;
+	font-family: Arial;
+	margin: 0px;
+}
+#quizHeader {
+	background-color: blue;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+}
+#quizMain {
+	height: 500px;
+	background-color: white;
+	padding-top: 10%;
+}
+#navBar {
+	height: 100px;
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.quizButton {
+	display: inline-block;
+	width: 40%;
+	margin: 0 auto;
+	border: 2px solid black;
+	border-radius: 20px;
+	color: red;
+}
+
+.quizButton:hover {
+	cursor: default;
+}
+#howToLabel {
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+}
+#howToWrapper {
+	margin: auto;
+	width: 40%;
+	height: fit-content;
+	font-size: 20px;
+}
+#footerText {
+	color: grey;
+	position: absolute;
+	bottom: 20px;
+	right: 30px;
+	font-size: 12px;
+}
+
+/* ----------------< MEDIA QUERIES >-------------------- */
+
+/* Responsive layout - when the screen is less than 800px wide, 
+adjust the close text and the question text to fit the screen.  */
+
+@media screen and (max-width: 800px) {
+	#questionWrapper {
+		float: none;
+		width: 80%;
+		padding: 20px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.quizButton {
+		float: none;
+		width: 80%;
+		border-radius: 0px;
+		margin: 2px;
+		border: 0.5px solid black;
+	}
+}
+
+/* ---------------< CSS END >------------------ */
+
