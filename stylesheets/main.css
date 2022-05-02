@@ -3,96 +3,91 @@
 * {
 	box-sizing: border-box;
 }
-/*
-.clearfix::after {
-	content: "";
-	clear: both;
-	display: table;
-}
-*/
-
 body {
+	background-color: white;
 	font-family: Arial;
-	background-color: #262626;
+	margin: 0px;
 }
-/**/
-/*
-#wrapper {
-  	margin: 0 auto;
-  	width: 1000%;
-	height: 1200px;
-	border: 1px solid black;
-	background-color: aqua;
-}
-*/
-
-/*
-#header {
-	width: 100%;
-	height: 150px;
-	border: 1px solid black;
-	background-color: red;
-}
-
-#main {
-	width: 100%;
-	height: 1050px;
-	border: 1px solid black;
-	background-color: green;
-}
-*/
-.boxWrapper {
-	width: 50%;
-	height: 50%;
-	padding: 2%;
-	position: absolute;
-	top: 30px;
-	right: 30px;
-	border-top: 3px solid red;
-	border-right: 3px solid red;
-}
-#textWrapper {
-	width: 45%;
-	height: 50%;
-	padding: 2%;
-	position: absolute;
-	top: 40%;
-	left: 15%;
-}
-
-.box {
-	height: 30%;
-	width: 30%;
-	margin: 2%;
-	float: right;
-	color: rgb(94, 94, 94);
-	display: inline-block;
-	border: 0.5px solid black;
-	border-radius: 5px;
-	background-color: rgb(31, 31, 31);
+#quizHeader {
+	background-color: blue;
+	height: 100px;
 	line-height: 100px;
 	text-align: center;
-}
-.box:hover {
-	background-color: blue;
 	color: white;
-	vertical-align: middle;
+	font-size: 30px;
+	font-weight: bold;
+}
+#quizMain {
+	height: 400px;
+	background-color: white;
+	padding-top: 10%;
+}
+#navBar {
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+}
+.howToButton {
+	float: right;
+	width: 45px;
+	height: 45px;
+	text-align: center;
+	background-color: red;
+	border: 2px solid white;
+	margin: 20px;
+	border-radius: 50%;
+	line-height: 40px;
+}
+.quizButton {
+	background-color: red;
+	display: inline-block;
+	width: 30%;
+	margin: 0 auto;
+	border-radius: 20px;
+}
+.quizButton:hover {
+	cursor: default;
+	color: black;
+}
+.howToButton:hover {
 	cursor: default;
 }
-#welcomeText {
-	color: white;
-	font-size: 50px;
+#questionNumberLabel {
+	float: left;
+	font-size: 20px;
 	font-weight: bold;
-	text-align: left;
-	border-bottom: 1px solid red;
 }
-#welcomeTitle {
-	color: lightgrey;
-	float: right;
-	font-size: 30px;
+#questionWrapper {
+	margin: auto;
+	width: 40%;
+	height: fit-content;
+	font-size: 40px;
+}
+#questionText {
+	text-align: center;
+}
+.choiceButton {
+	background-color: lightgrey;
+	border: 3px solid black;
+	display: none;
+	width: 30%;
+	margin: 0 auto;
+	border-radius: 20px;
+	color: black;
+}
+.choiceButton:hover {
+	cursor: default;
+	color: red;
+}
+#navBarSpacer {
+	height: 30px;
+
 }
 #footerText {
-	color: white;
+	color: grey;
 	position: absolute;
 	bottom: 20px;
 	right: 30px;
@@ -100,25 +95,29 @@ body {
 }
 
 /* ------------------------------------ MEDIA QUERIES ----------------------------------------- */
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-/*
+
+/* Responsive layout - when the screen is less than 400px wide, 
+make the navigation links stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
-        width: 100%;
-        padding: 0;
-    }
-}
-*/		
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-/*
-@media screen and (max-width: 400px) {
-	.nav a {
+	#questionWrapper {
 		float: none;
-		width: 100%;
+		width: 80%;
+		padding: 20px;
 	}
 }
-*/
-/*
+
+@media screen and (max-width: 800px) {
+	.quizButton {
+		float: none;
+		width: 100%;
+		border-radius: 0px;
+		margin: 2px;
+		border: 0.5px solid black;
+	}
+}
+
+
 @media print {
 	html, body {
 		--displayWidth: ;
@@ -132,13 +131,13 @@ body {
 		padding: 2cm;
 	}
 }
-*/
-/*
+
+
 @page {
 	margin: 2.5cm;
 	
 }
-*/
+
 /* ------------------------------------ TRANSITIONS ----------------------------------------- */
 
 .moveMe {

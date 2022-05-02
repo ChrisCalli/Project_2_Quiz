@@ -18,7 +18,7 @@
 	-->
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<link rel="stylesheet" href="stylesheets/main.css">
-	<script src="scripts/pages.js" defer></script>
+	<script src="scripts/main.js" defer></script>
 	
 </head>
 
@@ -28,28 +28,35 @@
 	
 <!-- --------------------------------------------------- HEADER ----------------------------------------------------------------- -->
 
-<header>
-		
+<header id="quizHeader">
+		<div width="300px">Christopher Calliara's Quiz</div>
+		<div id="howToButton" class="howToButton">&#x2754;</div>
 </header>
-	
-<!-- ----------------------------------------------------- NAV ----------------------------------------------------------------- -->
-
-<nav>
-	<!-- create the nav menu -->
-	<div class="boxWrapper">
-		<div id="portfolio" class="box"  onclick="document.location='portfolio.html'">Portfolio</div>
-	</div>
-</nav>
 
 <!-- --------------------------------------------------- CONTENT ----------------------------------------------------------------- -->
 		
-<main>
+<main id="quizMain">
 	<!-- Create the main text in the center of the page -->
-	<div id="textWrapper">
-		<div id="welcomeText">Christopher Calliara</div>
-		<div id="welcomeTitle">Front end developer</div>
+	<div id="questionWrapper">
+		<div id="questionNumberLabel"></div>
+		<br>
+		<div id="questionText"></div>
+		
 	</div>
+	
 </main>
+
+<!-- ----------------------------------------------------- NAV ----------------------------------------------------------------- -->
+
+<nav id="navBar">
+	<!-- create the nav menu -->
+	<div class="buttonWrapper">	
+		<div id="choiceButton1" class="choiceButton">choice 1</div>
+		<div id="choiceButton2" class="choiceButton">choice 2</div>
+		<div id="navBarSpacer"></div>
+		<div id="startQuizButton" class="quizButton">Start Quiz</div>
+	</div>
+</nav>
 
 <!-- --------------------------------------------------- FOOTER ----------------------------------------------------------------- -->
 

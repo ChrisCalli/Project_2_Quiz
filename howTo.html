@@ -6,7 +6,7 @@
 <head>
  	<meta charset="utf-8" />
  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Basic Structure</title>
+	<title>Project 2 - Quiz Help</title>
 	
 	
 	<!-- Set the meta data for author and description -->
@@ -15,9 +15,11 @@
 	
 	
 	<!-- Load the favicon, stylesheets and scripts here. Defer the scripts till the page loads. 
-	<script src="scripts/main.js" defer></script>-->
+	-->
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
-	<link rel="stylesheet" href="stylesheets/pages.css">
+	<link rel="stylesheet" href="stylesheets/howTo.css">
+	<script src="scripts/howTo.js" defer></script>
+
 	
 </head>
 
@@ -27,56 +29,44 @@
 	
 <!-- --------------------------------------------------- HEADER ----------------------------------------------------------------- -->
 
-<header>
-		
+<header id="quizHeader">
+		<div width="300px">Christopher Calliara's Quiz</div>
 </header>
-	
-<!-- ----------------------------------------------------- NAV ----------------------------------------------------------------- -->
-
-<nav>
-	<!-- create the back menu -->
-    <div class="boxWrapper">
-		<div id="portfolioBackArrow" class="box" onclick="document.location='index.html'">&#x1f818;</div>
-	</div>
-</nav>
 
 <!-- --------------------------------------------------- CONTENT ----------------------------------------------------------------- -->
 		
-<main>
-	<!-- create the page content -->
-	<div class="textWrapper">
-		<div class="contentHeading">Portfolio</div>
-		<div class="contentWrapper">
-			<br>
-			<div class="contentTextBox">
-				<div class="contentLabel">HTML editor</div>
-				<div class="contentText">
-					<br>
-					My HTML editor is a commercial quality editor. Capable of producing true cross platform web pages.
-					The front end is written mainly in javascript, and the back end is written in PHP.
-					<br>
-					<br>
-					<image class="imageClass" src="htmleditor.jpg" width="200px"></image>
-					<image class="imageClass" src="htmleditor1.jpg" width="200px"></image>
-				</div>
-			</div>
-			<div class="contentTextBox">
-				<div class="contentLabel">E-commerce site</div>
-				<div class="contentText">
-					<p>
-						Coming soon
-					</p>
-				</div>
-			</div>
+<main id="quizMain">
+
+	<!-- Create the main text in the center of the page -->
+	<div id="howToWrapper">
+		<div id="howToLabel">Follow these steps:</div>
+		<br>
+		<div id="howToText">
+			<ul>
+				<li>Step 1: Start the quiz.</li>
+				<li>Step 2: Read the question.</li>
+				<li>Step 3: Choose your answer.</li>
+				<li>Step 4: At the end of the quiz your score will be shown.</li>
+				<li>Step 5: Have a cup of coffee.</li>
+			</ul>
 		</div>
+		
 	</div>
-	
-	
 </main>
+
+<!-- ----------------------------------------------------- NAV ----------------------------------------------------------------- -->
+
+<nav id="navBar">
+	<!-- create the nav menu -->
+	<div class="buttonWrapper">	
+		<div id="backButton" class="quizButton">Close this window to return to the quiz.</div>
+	</div>
+</nav>
 
 <!-- --------------------------------------------------- FOOTER ----------------------------------------------------------------- -->
 
 <footer>
+		<!-- Create the footer information -->
  		<div id="footerText">&#xa9; 2022 - All rights reserved.</div>	
 </footer>
 	
