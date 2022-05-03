@@ -1,6 +1,3 @@
-
-
-
 // JavaScript Document
 
 	"use strict";
@@ -15,9 +12,7 @@
 
 	const choiceButton1 = document.getElementById("choiceButton1");
 	const choiceButton2 = document.getElementById("choiceButton2");
-
 	const startButton = document.getElementById("startQuizButton");
-
 	const howToButton = document.getElementById("howToButton");
 
 	const questionLabel = document.getElementById("questionNumberLabel");
@@ -181,11 +176,10 @@
 
 	howToButton.addEventListener("click", function(e) {
 
-		//window.location = "howTo.html";
 		window.open("howTo.html", "_blank");
-		//alert(currentPosition);
 
 	});
+
 	startButton.addEventListener("click", function(e) {
 		moveQuiz();
 	});

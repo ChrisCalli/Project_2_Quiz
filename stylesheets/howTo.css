@@ -40,6 +40,8 @@ body {
 }
 
 .quizButton:hover {
+	color: white;
+	background-color: red;
 	cursor: default;
 }
 #howToLabel {
